@@ -1,0 +1,1013 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2E63A8FD26B17768C7BD2F7A /* Pods_NasaAstronomyPicture_NasaAstronomyPictureUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AB85CAC34F650A9E6E7A11E /* Pods_NasaAstronomyPicture_NasaAstronomyPictureUITests.framework */; };
+		639BA5585507EBCE1541F9B3 /* Pods_NasaAstronomyPicture.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FD99C45B9450B25A5662A37 /* Pods_NasaAstronomyPicture.framework */; };
+		83EEC37697747C2B76C93F31 /* Pods_NasaAstronomyPictureTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF50C69A3EDB224DEF7A410D /* Pods_NasaAstronomyPictureTests.framework */; };
+		983093AA28C234860092FB54 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983093A928C234860092FB54 /* AppDelegate.swift */; };
+		983093AC28C234860092FB54 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983093AB28C234860092FB54 /* SceneDelegate.swift */; };
+		983093AE28C234860092FB54 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983093AD28C234860092FB54 /* ViewController.swift */; };
+		983093B128C234870092FB54 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 983093AF28C234860092FB54 /* Main.storyboard */; };
+		983093B328C2348B0092FB54 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 983093B228C2348B0092FB54 /* Assets.xcassets */; };
+		983093B628C2348B0092FB54 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 983093B428C2348B0092FB54 /* LaunchScreen.storyboard */; };
+		983093C128C2348C0092FB54 /* NasaAstronomyPictureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983093C028C2348C0092FB54 /* NasaAstronomyPictureTests.swift */; };
+		983093CB28C2348C0092FB54 /* NasaAstronomyPictureUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983093CA28C2348C0092FB54 /* NasaAstronomyPictureUITests.swift */; };
+		983093CD28C2348C0092FB54 /* NasaAstronomyPictureUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983093CC28C2348C0092FB54 /* NasaAstronomyPictureUITestsLaunchTests.swift */; };
+		983093DB28C235090092FB54 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983093DA28C235090092FB54 /* Environment.swift */; };
+		983093DE28C236A40092FB54 /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983093DD28C236A40092FB54 /* Endpoints.swift */; };
+		983093E428C23A290092FB54 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 983093E628C23A290092FB54 /* Localizable.strings */; };
+		983093EC28C23C820092FB54 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983093EB28C23C820092FB54 /* String+Extensions.swift */; };
+		983093EE28C23E8B0092FB54 /* NetworkConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983093ED28C23E8B0092FB54 /* NetworkConstants.swift */; };
+		983093F028C2413D0092FB54 /* HttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983093EF28C2413D0092FB54 /* HttpClient.swift */; };
+		983093F228C242290092FB54 /* NAPAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983093F128C242290092FB54 /* NAPAPIClient.swift */; };
+		983093F528C2498E0092FB54 /* NAPFetchImageResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983093F428C2498E0092FB54 /* NAPFetchImageResponse.swift */; };
+		983093F828C263CA0092FB54 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983093F728C263CA0092FB54 /* Logger.swift */; };
+		983093FE28C26DB70092FB54 /* CalendarPickerFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983093FA28C26DB70092FB54 /* CalendarPickerFooterView.swift */; };
+		983093FF28C26DB70092FB54 /* CalendarPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983093FB28C26DB70092FB54 /* CalendarPickerViewController.swift */; };
+		9830940028C26DB70092FB54 /* CalendarDateCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983093FC28C26DB70092FB54 /* CalendarDateCollectionViewCell.swift */; };
+		9830940128C26DB70092FB54 /* CalendarPickerHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983093FD28C26DB70092FB54 /* CalendarPickerHeaderView.swift */; };
+		9830940728C26DE60092FB54 /* Day.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9830940428C26DE60092FB54 /* Day.swift */; };
+		9830940828C26DE60092FB54 /* MonthMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9830940528C26DE60092FB54 /* MonthMetadata.swift */; };
+		9830940B28C270340092FB54 /* ViewControllerVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9830940A28C270340092FB54 /* ViewControllerVM.swift */; };
+		9830940D28C270880092FB54 /* BaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9830940C28C270880092FB54 /* BaseProtocol.swift */; };
+		9830940F28C284600092FB54 /* UIImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9830940E28C284600092FB54 /* UIImageView+Extensions.swift */; };
+		9830941128C28FC80092FB54 /* URL+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9830941028C28FC80092FB54 /* URL+Extensions.swift */; };
+		9830941428C2F29C0092FB54 /* NAPThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9830941328C2F29C0092FB54 /* NAPThemeManager.swift */; };
+		9830941628C2F7490092FB54 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9830941528C2F7490092FB54 /* UIColor+Extensions.swift */; };
+		9830941928C311D60092FB54 /* NAPCoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9830941828C311D60092FB54 /* NAPCoreDataManager.swift */; };
+		9830941C28C312220092FB54 /* NasaAstrology.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9830941A28C312220092FB54 /* NasaAstrology.xcdatamodeld */; };
+		98FAA14828C330D000E7D99D /* FavouriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98FAA14728C330D000E7D99D /* FavouriteViewController.swift */; };
+		98FAA14B28C3310F00E7D99D /* FavouriteViewControllerVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98FAA14A28C3310F00E7D99D /* FavouriteViewControllerVM.swift */; };
+		98FAA14D28C331C200E7D99D /* UIStoryboard+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98FAA14C28C331C200E7D99D /* UIStoryboard+Extensions.swift */; };
+		98FAA14F28C3342500E7D99D /* UIBarButtonItem+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98FAA14E28C3342500E7D99D /* UIBarButtonItem+Extensions.swift */; };
+		98FAA15428C3365D00E7D99D /* NAPTableViewCellIdentifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98FAA15328C3365D00E7D99D /* NAPTableViewCellIdentifiers.swift */; };
+		98FAA15728C33F6500E7D99D /* FavouriteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98FAA15528C33F6500E7D99D /* FavouriteTableViewCell.swift */; };
+		98FAA15828C33F6500E7D99D /* FavouriteTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98FAA15628C33F6500E7D99D /* FavouriteTableViewCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		983093BD28C2348C0092FB54 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9830939E28C234860092FB54 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 983093A528C234860092FB54;
+			remoteInfo = NasaAstronomyPicture;
+		};
+		983093C728C2348C0092FB54 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9830939E28C234860092FB54 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 983093A528C234860092FB54;
+			remoteInfo = NasaAstronomyPicture;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0B3FB491F45B7FF062510B49 /* Pods-NasaAstronomyPicture-NasaAstronomyPictureUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NasaAstronomyPicture-NasaAstronomyPictureUITests.release.xcconfig"; path = "Target Support Files/Pods-NasaAstronomyPicture-NasaAstronomyPictureUITests/Pods-NasaAstronomyPicture-NasaAstronomyPictureUITests.release.xcconfig"; sourceTree = "<group>"; };
+		3FD99C45B9450B25A5662A37 /* Pods_NasaAstronomyPicture.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NasaAstronomyPicture.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C1483CA02BCC5D1076EC405 /* Pods-NasaAstronomyPicture.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NasaAstronomyPicture.release.xcconfig"; path = "Target Support Files/Pods-NasaAstronomyPicture/Pods-NasaAstronomyPicture.release.xcconfig"; sourceTree = "<group>"; };
+		64FED30D02E64E503BAE6A15 /* Pods-NasaAstronomyPictureTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NasaAstronomyPictureTests.release.xcconfig"; path = "Target Support Files/Pods-NasaAstronomyPictureTests/Pods-NasaAstronomyPictureTests.release.xcconfig"; sourceTree = "<group>"; };
+		6AB85CAC34F650A9E6E7A11E /* Pods_NasaAstronomyPicture_NasaAstronomyPictureUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NasaAstronomyPicture_NasaAstronomyPictureUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BBDC5BD47EFBEFFDE88C541 /* Pods-NasaAstronomyPictureTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NasaAstronomyPictureTests.debug.xcconfig"; path = "Target Support Files/Pods-NasaAstronomyPictureTests/Pods-NasaAstronomyPictureTests.debug.xcconfig"; sourceTree = "<group>"; };
+		983093A628C234860092FB54 /* NasaAstronomyPicture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NasaAstronomyPicture.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		983093A928C234860092FB54 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		983093AB28C234860092FB54 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		983093AD28C234860092FB54 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		983093B028C234860092FB54 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		983093B228C2348B0092FB54 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		983093B528C2348B0092FB54 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		983093B728C2348B0092FB54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		983093BC28C2348C0092FB54 /* NasaAstronomyPictureTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NasaAstronomyPictureTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		983093C028C2348C0092FB54 /* NasaAstronomyPictureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NasaAstronomyPictureTests.swift; sourceTree = "<group>"; };
+		983093C628C2348C0092FB54 /* NasaAstronomyPictureUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NasaAstronomyPictureUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		983093CA28C2348C0092FB54 /* NasaAstronomyPictureUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NasaAstronomyPictureUITests.swift; sourceTree = "<group>"; };
+		983093CC28C2348C0092FB54 /* NasaAstronomyPictureUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NasaAstronomyPictureUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		983093DA28C235090092FB54 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		983093DD28C236A40092FB54 /* Endpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoints.swift; sourceTree = "<group>"; };
+		983093E028C239EB0092FB54 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		983093E528C23A290092FB54 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		983093E728C23A4A0092FB54 /* en-IN */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "en-IN"; path = "en-IN.lproj/Main.strings"; sourceTree = "<group>"; };
+		983093E828C23A4A0092FB54 /* en-IN */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "en-IN"; path = "en-IN.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		983093E928C23A4A0092FB54 /* en-IN */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "en-IN"; path = "en-IN.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		983093EB28C23C820092FB54 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		983093ED28C23E8B0092FB54 /* NetworkConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConstants.swift; sourceTree = "<group>"; };
+		983093EF28C2413D0092FB54 /* HttpClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpClient.swift; sourceTree = "<group>"; };
+		983093F128C242290092FB54 /* NAPAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NAPAPIClient.swift; sourceTree = "<group>"; };
+		983093F428C2498E0092FB54 /* NAPFetchImageResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NAPFetchImageResponse.swift; sourceTree = "<group>"; };
+		983093F728C263CA0092FB54 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		983093FA28C26DB70092FB54 /* CalendarPickerFooterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarPickerFooterView.swift; sourceTree = "<group>"; };
+		983093FB28C26DB70092FB54 /* CalendarPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarPickerViewController.swift; sourceTree = "<group>"; };
+		983093FC28C26DB70092FB54 /* CalendarDateCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarDateCollectionViewCell.swift; sourceTree = "<group>"; };
+		983093FD28C26DB70092FB54 /* CalendarPickerHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarPickerHeaderView.swift; sourceTree = "<group>"; };
+		9830940428C26DE60092FB54 /* Day.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Day.swift; sourceTree = "<group>"; };
+		9830940528C26DE60092FB54 /* MonthMetadata.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonthMetadata.swift; sourceTree = "<group>"; };
+		9830940A28C270340092FB54 /* ViewControllerVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerVM.swift; sourceTree = "<group>"; };
+		9830940C28C270880092FB54 /* BaseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseProtocol.swift; sourceTree = "<group>"; };
+		9830940E28C284600092FB54 /* UIImageView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extensions.swift"; sourceTree = "<group>"; };
+		9830941028C28FC80092FB54 /* URL+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+Extensions.swift"; sourceTree = "<group>"; };
+		9830941328C2F29C0092FB54 /* NAPThemeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NAPThemeManager.swift; sourceTree = "<group>"; };
+		9830941528C2F7490092FB54 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
+		9830941828C311D60092FB54 /* NAPCoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NAPCoreDataManager.swift; sourceTree = "<group>"; };
+		9830941B28C312220092FB54 /* NasaAstrology.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NasaAstrology.xcdatamodel; sourceTree = "<group>"; };
+		98FAA14728C330D000E7D99D /* FavouriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteViewController.swift; sourceTree = "<group>"; };
+		98FAA14A28C3310F00E7D99D /* FavouriteViewControllerVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteViewControllerVM.swift; sourceTree = "<group>"; };
+		98FAA14C28C331C200E7D99D /* UIStoryboard+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+Extensions.swift"; sourceTree = "<group>"; };
+		98FAA14E28C3342500E7D99D /* UIBarButtonItem+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Extensions.swift"; sourceTree = "<group>"; };
+		98FAA15328C3365D00E7D99D /* NAPTableViewCellIdentifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NAPTableViewCellIdentifiers.swift; sourceTree = "<group>"; };
+		98FAA15528C33F6500E7D99D /* FavouriteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteTableViewCell.swift; sourceTree = "<group>"; };
+		98FAA15628C33F6500E7D99D /* FavouriteTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavouriteTableViewCell.xib; sourceTree = "<group>"; };
+		DF50C69A3EDB224DEF7A410D /* Pods_NasaAstronomyPictureTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NasaAstronomyPictureTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F26E86297A3FAC9BE375AD31 /* Pods-NasaAstronomyPicture.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NasaAstronomyPicture.debug.xcconfig"; path = "Target Support Files/Pods-NasaAstronomyPicture/Pods-NasaAstronomyPicture.debug.xcconfig"; sourceTree = "<group>"; };
+		F5A6C519953E07E2B0820687 /* Pods-NasaAstronomyPicture-NasaAstronomyPictureUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NasaAstronomyPicture-NasaAstronomyPictureUITests.debug.xcconfig"; path = "Target Support Files/Pods-NasaAstronomyPicture-NasaAstronomyPictureUITests/Pods-NasaAstronomyPicture-NasaAstronomyPictureUITests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		983093A328C234860092FB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				639BA5585507EBCE1541F9B3 /* Pods_NasaAstronomyPicture.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		983093B928C2348C0092FB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83EEC37697747C2B76C93F31 /* Pods_NasaAstronomyPictureTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		983093C328C2348C0092FB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E63A8FD26B17768C7BD2F7A /* Pods_NasaAstronomyPicture_NasaAstronomyPictureUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		10A2317166CE0F32C22D4B2F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3FD99C45B9450B25A5662A37 /* Pods_NasaAstronomyPicture.framework */,
+				6AB85CAC34F650A9E6E7A11E /* Pods_NasaAstronomyPicture_NasaAstronomyPictureUITests.framework */,
+				DF50C69A3EDB224DEF7A410D /* Pods_NasaAstronomyPictureTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9830939D28C234860092FB54 = {
+			isa = PBXGroup;
+			children = (
+				983093A828C234860092FB54 /* NasaAstronomyPicture */,
+				983093BF28C2348C0092FB54 /* NasaAstronomyPictureTests */,
+				983093C928C2348C0092FB54 /* NasaAstronomyPictureUITests */,
+				983093A728C234860092FB54 /* Products */,
+				E131CF834E08C5F88B28427F /* Pods */,
+				10A2317166CE0F32C22D4B2F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		983093A728C234860092FB54 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				983093A628C234860092FB54 /* NasaAstronomyPicture.app */,
+				983093BC28C2348C0092FB54 /* NasaAstronomyPictureTests.xctest */,
+				983093C628C2348C0092FB54 /* NasaAstronomyPictureUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		983093A828C234860092FB54 /* NasaAstronomyPicture */ = {
+			isa = PBXGroup;
+			children = (
+				98FAA14928C330D700E7D99D /* ViewControllers */,
+				9830941728C311C70092FB54 /* CoreData */,
+				9830941228C2F2820092FB54 /* ThemeManager */,
+				983093F928C26DB70092FB54 /* CalendarPicker */,
+				983093F628C263B70092FB54 /* Utility */,
+				983093EA28C23C740092FB54 /* Extensions */,
+				983093E128C239F40092FB54 /* Localization */,
+				983093DC28C235F20092FB54 /* Network */,
+				983093D928C234F40092FB54 /* Environment */,
+				983093A928C234860092FB54 /* AppDelegate.swift */,
+				983093AB28C234860092FB54 /* SceneDelegate.swift */,
+				983093AF28C234860092FB54 /* Main.storyboard */,
+				983093B228C2348B0092FB54 /* Assets.xcassets */,
+				983093B428C2348B0092FB54 /* LaunchScreen.storyboard */,
+				983093B728C2348B0092FB54 /* Info.plist */,
+			);
+			path = NasaAstronomyPicture;
+			sourceTree = "<group>";
+		};
+		983093BF28C2348C0092FB54 /* NasaAstronomyPictureTests */ = {
+			isa = PBXGroup;
+			children = (
+				983093C028C2348C0092FB54 /* NasaAstronomyPictureTests.swift */,
+			);
+			path = NasaAstronomyPictureTests;
+			sourceTree = "<group>";
+		};
+		983093C928C2348C0092FB54 /* NasaAstronomyPictureUITests */ = {
+			isa = PBXGroup;
+			children = (
+				983093CA28C2348C0092FB54 /* NasaAstronomyPictureUITests.swift */,
+				983093CC28C2348C0092FB54 /* NasaAstronomyPictureUITestsLaunchTests.swift */,
+			);
+			path = NasaAstronomyPictureUITests;
+			sourceTree = "<group>";
+		};
+		983093D928C234F40092FB54 /* Environment */ = {
+			isa = PBXGroup;
+			children = (
+				983093DA28C235090092FB54 /* Environment.swift */,
+			);
+			path = Environment;
+			sourceTree = "<group>";
+		};
+		983093DC28C235F20092FB54 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				983093F328C2496F0092FB54 /* Response */,
+				983093DD28C236A40092FB54 /* Endpoints.swift */,
+				983093ED28C23E8B0092FB54 /* NetworkConstants.swift */,
+				983093EF28C2413D0092FB54 /* HttpClient.swift */,
+				983093F128C242290092FB54 /* NAPAPIClient.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		983093E128C239F40092FB54 /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				983093E628C23A290092FB54 /* Localizable.strings */,
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
+		983093EA28C23C740092FB54 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				983093EB28C23C820092FB54 /* String+Extensions.swift */,
+				9830940E28C284600092FB54 /* UIImageView+Extensions.swift */,
+				9830941028C28FC80092FB54 /* URL+Extensions.swift */,
+				9830941528C2F7490092FB54 /* UIColor+Extensions.swift */,
+				98FAA14C28C331C200E7D99D /* UIStoryboard+Extensions.swift */,
+				98FAA14E28C3342500E7D99D /* UIBarButtonItem+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		983093F328C2496F0092FB54 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				983093F428C2498E0092FB54 /* NAPFetchImageResponse.swift */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		983093F628C263B70092FB54 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				9830940C28C270880092FB54 /* BaseProtocol.swift */,
+				983093F728C263CA0092FB54 /* Logger.swift */,
+				98FAA15328C3365D00E7D99D /* NAPTableViewCellIdentifiers.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		983093F928C26DB70092FB54 /* CalendarPicker */ = {
+			isa = PBXGroup;
+			children = (
+				9830940228C26DE60092FB54 /* Models */,
+				983093FA28C26DB70092FB54 /* CalendarPickerFooterView.swift */,
+				983093FB28C26DB70092FB54 /* CalendarPickerViewController.swift */,
+				983093FC28C26DB70092FB54 /* CalendarDateCollectionViewCell.swift */,
+				983093FD28C26DB70092FB54 /* CalendarPickerHeaderView.swift */,
+			);
+			path = CalendarPicker;
+			sourceTree = "<group>";
+		};
+		9830940228C26DE60092FB54 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9830940428C26DE60092FB54 /* Day.swift */,
+				9830940528C26DE60092FB54 /* MonthMetadata.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9830940928C270200092FB54 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				9830940A28C270340092FB54 /* ViewControllerVM.swift */,
+				98FAA14A28C3310F00E7D99D /* FavouriteViewControllerVM.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		9830941228C2F2820092FB54 /* ThemeManager */ = {
+			isa = PBXGroup;
+			children = (
+				9830941328C2F29C0092FB54 /* NAPThemeManager.swift */,
+			);
+			path = ThemeManager;
+			sourceTree = "<group>";
+		};
+		9830941728C311C70092FB54 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				9830941828C311D60092FB54 /* NAPCoreDataManager.swift */,
+				9830941A28C312220092FB54 /* NasaAstrology.xcdatamodeld */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		98FAA14928C330D700E7D99D /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				98FAA15028C334F600E7D99D /* TableViewCell */,
+				9830940928C270200092FB54 /* ViewModel */,
+				983093AD28C234860092FB54 /* ViewController.swift */,
+				98FAA14728C330D000E7D99D /* FavouriteViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		98FAA15028C334F600E7D99D /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				98FAA15528C33F6500E7D99D /* FavouriteTableViewCell.swift */,
+				98FAA15628C33F6500E7D99D /* FavouriteTableViewCell.xib */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
+		E131CF834E08C5F88B28427F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F26E86297A3FAC9BE375AD31 /* Pods-NasaAstronomyPicture.debug.xcconfig */,
+				5C1483CA02BCC5D1076EC405 /* Pods-NasaAstronomyPicture.release.xcconfig */,
+				F5A6C519953E07E2B0820687 /* Pods-NasaAstronomyPicture-NasaAstronomyPictureUITests.debug.xcconfig */,
+				0B3FB491F45B7FF062510B49 /* Pods-NasaAstronomyPicture-NasaAstronomyPictureUITests.release.xcconfig */,
+				8BBDC5BD47EFBEFFDE88C541 /* Pods-NasaAstronomyPictureTests.debug.xcconfig */,
+				64FED30D02E64E503BAE6A15 /* Pods-NasaAstronomyPictureTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		983093A528C234860092FB54 /* NasaAstronomyPicture */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 983093D028C2348C0092FB54 /* Build configuration list for PBXNativeTarget "NasaAstronomyPicture" */;
+			buildPhases = (
+				40A9DB736895B7477E9D5C24 /* [CP] Check Pods Manifest.lock */,
+				983093A228C234860092FB54 /* Sources */,
+				983093A328C234860092FB54 /* Frameworks */,
+				983093A428C234860092FB54 /* Resources */,
+				E4273EDC6AF8A524882577E6 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NasaAstronomyPicture;
+			productName = NasaAstronomyPicture;
+			productReference = 983093A628C234860092FB54 /* NasaAstronomyPicture.app */;
+			productType = "com.apple.product-type.application";
+		};
+		983093BB28C2348C0092FB54 /* NasaAstronomyPictureTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 983093D328C2348C0092FB54 /* Build configuration list for PBXNativeTarget "NasaAstronomyPictureTests" */;
+			buildPhases = (
+				4C689E31AFC01DA566BF03E7 /* [CP] Check Pods Manifest.lock */,
+				983093B828C2348C0092FB54 /* Sources */,
+				983093B928C2348C0092FB54 /* Frameworks */,
+				983093BA28C2348C0092FB54 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				983093BE28C2348C0092FB54 /* PBXTargetDependency */,
+			);
+			name = NasaAstronomyPictureTests;
+			productName = NasaAstronomyPictureTests;
+			productReference = 983093BC28C2348C0092FB54 /* NasaAstronomyPictureTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		983093C528C2348C0092FB54 /* NasaAstronomyPictureUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 983093D628C2348C0092FB54 /* Build configuration list for PBXNativeTarget "NasaAstronomyPictureUITests" */;
+			buildPhases = (
+				350DEEFAD002997DEE619B4E /* [CP] Check Pods Manifest.lock */,
+				983093C228C2348C0092FB54 /* Sources */,
+				983093C328C2348C0092FB54 /* Frameworks */,
+				983093C428C2348C0092FB54 /* Resources */,
+				0A3C0B6A38363E2B750A2C2D /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				983093C828C2348C0092FB54 /* PBXTargetDependency */,
+			);
+			name = NasaAstronomyPictureUITests;
+			productName = NasaAstronomyPictureUITests;
+			productReference = 983093C628C2348C0092FB54 /* NasaAstronomyPictureUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9830939E28C234860092FB54 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					983093A528C234860092FB54 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					983093BB28C2348C0092FB54 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 983093A528C234860092FB54;
+					};
+					983093C528C2348C0092FB54 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 983093A528C234860092FB54;
+					};
+				};
+			};
+			buildConfigurationList = 983093A128C234860092FB54 /* Build configuration list for PBXProject "NasaAstronomyPicture" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				"en-IN",
+			);
+			mainGroup = 9830939D28C234860092FB54;
+			productRefGroup = 983093A728C234860092FB54 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				983093A528C234860092FB54 /* NasaAstronomyPicture */,
+				983093BB28C2348C0092FB54 /* NasaAstronomyPictureTests */,
+				983093C528C2348C0092FB54 /* NasaAstronomyPictureUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		983093A428C234860092FB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				983093B628C2348B0092FB54 /* LaunchScreen.storyboard in Resources */,
+				983093E428C23A290092FB54 /* Localizable.strings in Resources */,
+				983093B328C2348B0092FB54 /* Assets.xcassets in Resources */,
+				983093B128C234870092FB54 /* Main.storyboard in Resources */,
+				98FAA15828C33F6500E7D99D /* FavouriteTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		983093BA28C2348C0092FB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		983093C428C2348C0092FB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0A3C0B6A38363E2B750A2C2D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NasaAstronomyPicture-NasaAstronomyPictureUITests/Pods-NasaAstronomyPicture-NasaAstronomyPictureUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NasaAstronomyPicture-NasaAstronomyPictureUITests/Pods-NasaAstronomyPicture-NasaAstronomyPictureUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NasaAstronomyPicture-NasaAstronomyPictureUITests/Pods-NasaAstronomyPicture-NasaAstronomyPictureUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		350DEEFAD002997DEE619B4E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NasaAstronomyPicture-NasaAstronomyPictureUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		40A9DB736895B7477E9D5C24 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NasaAstronomyPicture-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4C689E31AFC01DA566BF03E7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NasaAstronomyPictureTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E4273EDC6AF8A524882577E6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NasaAstronomyPicture/Pods-NasaAstronomyPicture-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NasaAstronomyPicture/Pods-NasaAstronomyPicture-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NasaAstronomyPicture/Pods-NasaAstronomyPicture-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		983093A228C234860092FB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				983093EE28C23E8B0092FB54 /* NetworkConstants.swift in Sources */,
+				9830941128C28FC80092FB54 /* URL+Extensions.swift in Sources */,
+				9830940828C26DE60092FB54 /* MonthMetadata.swift in Sources */,
+				983093F828C263CA0092FB54 /* Logger.swift in Sources */,
+				983093AE28C234860092FB54 /* ViewController.swift in Sources */,
+				983093F028C2413D0092FB54 /* HttpClient.swift in Sources */,
+				98FAA15428C3365D00E7D99D /* NAPTableViewCellIdentifiers.swift in Sources */,
+				98FAA14D28C331C200E7D99D /* UIStoryboard+Extensions.swift in Sources */,
+				98FAA14B28C3310F00E7D99D /* FavouriteViewControllerVM.swift in Sources */,
+				983093DB28C235090092FB54 /* Environment.swift in Sources */,
+				9830941428C2F29C0092FB54 /* NAPThemeManager.swift in Sources */,
+				98FAA14828C330D000E7D99D /* FavouriteViewController.swift in Sources */,
+				9830941928C311D60092FB54 /* NAPCoreDataManager.swift in Sources */,
+				983093AA28C234860092FB54 /* AppDelegate.swift in Sources */,
+				983093AC28C234860092FB54 /* SceneDelegate.swift in Sources */,
+				983093F228C242290092FB54 /* NAPAPIClient.swift in Sources */,
+				9830940B28C270340092FB54 /* ViewControllerVM.swift in Sources */,
+				9830940F28C284600092FB54 /* UIImageView+Extensions.swift in Sources */,
+				983093F528C2498E0092FB54 /* NAPFetchImageResponse.swift in Sources */,
+				983093EC28C23C820092FB54 /* String+Extensions.swift in Sources */,
+				9830940728C26DE60092FB54 /* Day.swift in Sources */,
+				983093FF28C26DB70092FB54 /* CalendarPickerViewController.swift in Sources */,
+				983093DE28C236A40092FB54 /* Endpoints.swift in Sources */,
+				98FAA14F28C3342500E7D99D /* UIBarButtonItem+Extensions.swift in Sources */,
+				98FAA15728C33F6500E7D99D /* FavouriteTableViewCell.swift in Sources */,
+				9830940028C26DB70092FB54 /* CalendarDateCollectionViewCell.swift in Sources */,
+				9830941C28C312220092FB54 /* NasaAstrology.xcdatamodeld in Sources */,
+				9830940128C26DB70092FB54 /* CalendarPickerHeaderView.swift in Sources */,
+				9830940D28C270880092FB54 /* BaseProtocol.swift in Sources */,
+				9830941628C2F7490092FB54 /* UIColor+Extensions.swift in Sources */,
+				983093FE28C26DB70092FB54 /* CalendarPickerFooterView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		983093B828C2348C0092FB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				983093C128C2348C0092FB54 /* NasaAstronomyPictureTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		983093C228C2348C0092FB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				983093CB28C2348C0092FB54 /* NasaAstronomyPictureUITests.swift in Sources */,
+				983093CD28C2348C0092FB54 /* NasaAstronomyPictureUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		983093BE28C2348C0092FB54 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 983093A528C234860092FB54 /* NasaAstronomyPicture */;
+			targetProxy = 983093BD28C2348C0092FB54 /* PBXContainerItemProxy */;
+		};
+		983093C828C2348C0092FB54 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 983093A528C234860092FB54 /* NasaAstronomyPicture */;
+			targetProxy = 983093C728C2348C0092FB54 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		983093AF28C234860092FB54 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				983093B028C234860092FB54 /* Base */,
+				983093E028C239EB0092FB54 /* en */,
+				983093E728C23A4A0092FB54 /* en-IN */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		983093B428C2348B0092FB54 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				983093B528C2348B0092FB54 /* Base */,
+				983093E828C23A4A0092FB54 /* en-IN */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		983093E628C23A290092FB54 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				983093E528C23A290092FB54 /* en */,
+				983093E928C23A4A0092FB54 /* en-IN */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		983093CE28C2348C0092FB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		983093CF28C2348C0092FB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		983093D128C2348C0092FB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F26E86297A3FAC9BE375AD31 /* Pods-NasaAstronomyPicture.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NasaAstronomyPicture/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.honeywell.calendar.demo.NasaAstronomyPicture;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		983093D228C2348C0092FB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C1483CA02BCC5D1076EC405 /* Pods-NasaAstronomyPicture.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NasaAstronomyPicture/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.honeywell.calendar.demo.NasaAstronomyPicture;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		983093D428C2348C0092FB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8BBDC5BD47EFBEFFDE88C541 /* Pods-NasaAstronomyPictureTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.honeywell.calendar.demo.NasaAstronomyPictureTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NasaAstronomyPicture.app/NasaAstronomyPicture";
+			};
+			name = Debug;
+		};
+		983093D528C2348C0092FB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 64FED30D02E64E503BAE6A15 /* Pods-NasaAstronomyPictureTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.honeywell.calendar.demo.NasaAstronomyPictureTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NasaAstronomyPicture.app/NasaAstronomyPicture";
+			};
+			name = Release;
+		};
+		983093D728C2348C0092FB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F5A6C519953E07E2B0820687 /* Pods-NasaAstronomyPicture-NasaAstronomyPictureUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.honeywell.calendar.demo.NasaAstronomyPictureUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NasaAstronomyPicture;
+			};
+			name = Debug;
+		};
+		983093D828C2348C0092FB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B3FB491F45B7FF062510B49 /* Pods-NasaAstronomyPicture-NasaAstronomyPictureUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.honeywell.calendar.demo.NasaAstronomyPictureUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NasaAstronomyPicture;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		983093A128C234860092FB54 /* Build configuration list for PBXProject "NasaAstronomyPicture" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				983093CE28C2348C0092FB54 /* Debug */,
+				983093CF28C2348C0092FB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		983093D028C2348C0092FB54 /* Build configuration list for PBXNativeTarget "NasaAstronomyPicture" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				983093D128C2348C0092FB54 /* Debug */,
+				983093D228C2348C0092FB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		983093D328C2348C0092FB54 /* Build configuration list for PBXNativeTarget "NasaAstronomyPictureTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				983093D428C2348C0092FB54 /* Debug */,
+				983093D528C2348C0092FB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		983093D628C2348C0092FB54 /* Build configuration list for PBXNativeTarget "NasaAstronomyPictureUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				983093D728C2348C0092FB54 /* Debug */,
+				983093D828C2348C0092FB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		9830941A28C312220092FB54 /* NasaAstrology.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9830941B28C312220092FB54 /* NasaAstrology.xcdatamodel */,
+			);
+			currentVersion = 9830941B28C312220092FB54 /* NasaAstrology.xcdatamodel */;
+			path = NasaAstrology.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 9830939E28C234860092FB54 /* Project object */;
+}

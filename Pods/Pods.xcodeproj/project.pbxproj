@@ -1,0 +1,976 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		35F97E4C86B025D2049852AD3196C0B0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		45B3BEC9B63C96F1387342C36CAFC419 /* Pods-NasaAstronomyPicture-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 42C4F0622E74F64C276C435F2DF0D7F9 /* Pods-NasaAstronomyPicture-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4C43AB59C902AD3A57C56D9C773E98DB /* Pods-NasaAstronomyPictureTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C3EEF64C09489355C5DE01917D7BCB43 /* Pods-NasaAstronomyPictureTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4FB049AF5A0B5AC5BED7B4E1B726B709 /* Pods-NasaAstronomyPictureTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E063AE0D31072F0C8C7DD2EB9548D29B /* Pods-NasaAstronomyPictureTests-dummy.m */; };
+		5825F71CD70DE1FE804DA3B47A48232C /* YouTubePlayer-Swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F5DC9272F2130AF40CBF7B2B1785DF4F /* YouTubePlayer-Swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		644C82C90358AF4130014F5D0C81CD92 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		6D3820CFC31943A43CAE8136152D40D0 /* YTPlayer.html in Resources */ = {isa = PBXBuildFile; fileRef = E5FFDAC3DD5C274A9D1B97960131D431 /* YTPlayer.html */; };
+		6E1769D2B8B969728E22C7B8E15C27BA /* YouTubePlayer-Swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F6F5B58B9C70F896B2DBB335AD41FDD1 /* YouTubePlayer-Swift-dummy.m */; };
+		8200D89DA0E425A03BF10236DDF6D9AA /* VideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61CE01A14ECB7C11836DCD75E374EC14 /* VideoPlayerView.swift */; };
+		A4B894956AAFB4A48D8FF27522F330E0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		B7D149886D6337F2D8E3D4D3670363C8 /* Pods-NasaAstronomyPicture-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6298B4F197A998DAD5FB9CEF699483D5 /* Pods-NasaAstronomyPicture-dummy.m */; };
+		D1B78CBE2368A774A86297968564D0FC /* Pods-NasaAstronomyPicture-NasaAstronomyPictureUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A06FCEAE5C87B2ADDFC6F88F86E3066 /* Pods-NasaAstronomyPicture-NasaAstronomyPictureUITests-dummy.m */; };
+		DC63350EB8D72955000BE62AF58F49CA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		FCEF62AA70AF2618BBE537E09FD04654 /* Pods-NasaAstronomyPicture-NasaAstronomyPictureUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D9320892A04CC24519E92201E2E6D64 /* Pods-NasaAstronomyPicture-NasaAstronomyPictureUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BA66986D75FB7DE58C4319DBCCE7F927 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 17F91230987223F6C1350A655DC43689;
+			remoteInfo = "YouTubePlayer-Swift";
+		};
+		BEC0FCCC039F09CB2EB5058F5AF1DC9C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 10348E5FDB34914E07BC12948E05498C;
+			remoteInfo = "Pods-NasaAstronomyPicture";
+		};
+		ED454B4F0688DC46D67B5E4AE26CCC9D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 17F91230987223F6C1350A655DC43689;
+			remoteInfo = "YouTubePlayer-Swift";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		02AB3D61B4F373516A224C8422A60D12 /* Pods-NasaAstronomyPicture */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-NasaAstronomyPicture"; path = Pods_NasaAstronomyPicture.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		16F8D8C05F334A808763C6DBB8AC8CA1 /* Pods-NasaAstronomyPictureTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NasaAstronomyPictureTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		21AA05C365B8645D8D7D79BC680CFE92 /* Pods-NasaAstronomyPictureTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NasaAstronomyPictureTests-Info.plist"; sourceTree = "<group>"; };
+		2A06FCEAE5C87B2ADDFC6F88F86E3066 /* Pods-NasaAstronomyPicture-NasaAstronomyPictureUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NasaAstronomyPicture-NasaAstronomyPictureUITests-dummy.m"; sourceTree = "<group>"; };
+		2B92EFE564C6DAB0F6DF1CCB7A0903B1 /* YouTubePlayer-Swift */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "YouTubePlayer-Swift"; path = YouTubePlayer_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2DCDFC85007787811B261AC693809154 /* YouTubePlayer-Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "YouTubePlayer-Swift.release.xcconfig"; sourceTree = "<group>"; };
+		3448CE436021407D2F3395BF6352E2C2 /* Pods-NasaAstronomyPicture-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NasaAstronomyPicture-Info.plist"; sourceTree = "<group>"; };
+		3648ECCB564B578DEE30A90A4112074D /* Pods-NasaAstronomyPicture-NasaAstronomyPictureUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NasaAstronomyPicture-NasaAstronomyPictureUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		390A3C961483D5CBED451751E3B957C0 /* Pods-NasaAstronomyPicture-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NasaAstronomyPicture-acknowledgements.markdown"; sourceTree = "<group>"; };
+		42C4F0622E74F64C276C435F2DF0D7F9 /* Pods-NasaAstronomyPicture-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NasaAstronomyPicture-umbrella.h"; sourceTree = "<group>"; };
+		44AD31D3F7E57E7C5CC018E66659D330 /* Pods-NasaAstronomyPicture-NasaAstronomyPictureUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NasaAstronomyPicture-NasaAstronomyPictureUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		4CB5CDF8395E474EA66B1C9549740868 /* Pods-NasaAstronomyPictureTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NasaAstronomyPictureTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4D03437CED91929294D03F47AF141F11 /* Pods-NasaAstronomyPicture-NasaAstronomyPictureUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-NasaAstronomyPicture-NasaAstronomyPictureUITests.modulemap"; sourceTree = "<group>"; };
+		4E8D269B6ACC2753398B5AEEF6A807C7 /* Pods-NasaAstronomyPicture-NasaAstronomyPictureUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NasaAstronomyPicture-NasaAstronomyPictureUITests.release.xcconfig"; sourceTree = "<group>"; };
+		508DA7F3B5EE1E91E18AB953E752313D /* Pods-NasaAstronomyPicture.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NasaAstronomyPicture.debug.xcconfig"; sourceTree = "<group>"; };
+		57D28C89E26DABC3A0DAD478F1EBF772 /* Pods-NasaAstronomyPicture.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-NasaAstronomyPicture.modulemap"; sourceTree = "<group>"; };
+		61CE01A14ECB7C11836DCD75E374EC14 /* VideoPlayerView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VideoPlayerView.swift; path = YouTubePlayer/YouTubePlayer/VideoPlayerView.swift; sourceTree = "<group>"; };
+		6298B4F197A998DAD5FB9CEF699483D5 /* Pods-NasaAstronomyPicture-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NasaAstronomyPicture-dummy.m"; sourceTree = "<group>"; };
+		6D9320892A04CC24519E92201E2E6D64 /* Pods-NasaAstronomyPicture-NasaAstronomyPictureUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NasaAstronomyPicture-NasaAstronomyPictureUITests-umbrella.h"; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		7E54116B99D7D49F9602C32A643A728B /* Pods-NasaAstronomyPicture-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NasaAstronomyPicture-frameworks.sh"; sourceTree = "<group>"; };
+		8870EBAE20B08A1E172963F5D2750CF8 /* Pods-NasaAstronomyPicture.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NasaAstronomyPicture.release.xcconfig"; sourceTree = "<group>"; };
+		8C3A5345AC76AADE80CA19083E366E3D /* YouTubePlayer-Swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "YouTubePlayer-Swift.debug.xcconfig"; sourceTree = "<group>"; };
+		945CB36E75B48051B18808BC9DC9600C /* YouTubePlayer-Swift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "YouTubePlayer-Swift-Info.plist"; sourceTree = "<group>"; };
+		961C5137170C7696DE47D02D9746FCEC /* YouTubePlayer-Swift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YouTubePlayer-Swift-prefix.pch"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9F37D0E667396E99FF6D68CF60BE9F28 /* Pods-NasaAstronomyPicture-NasaAstronomyPictureUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NasaAstronomyPicture-NasaAstronomyPictureUITests-frameworks.sh"; sourceTree = "<group>"; };
+		A7EAB76407AB65A59274221994570776 /* Pods-NasaAstronomyPicture-NasaAstronomyPictureUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NasaAstronomyPicture-NasaAstronomyPictureUITests-Info.plist"; sourceTree = "<group>"; };
+		AAF81803C3D0AC0402BE1924E257DB44 /* Pods-NasaAstronomyPictureTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NasaAstronomyPictureTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		BB473A58808D974779210E6E4975E11E /* Pods-NasaAstronomyPicture-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NasaAstronomyPicture-acknowledgements.plist"; sourceTree = "<group>"; };
+		BD302F5FB6237A3C5116A57654A1B261 /* Pods-NasaAstronomyPictureTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-NasaAstronomyPictureTests.modulemap"; sourceTree = "<group>"; };
+		C3EEF64C09489355C5DE01917D7BCB43 /* Pods-NasaAstronomyPictureTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NasaAstronomyPictureTests-umbrella.h"; sourceTree = "<group>"; };
+		C6D5852468F09B5EAE2E7A8267DBC65F /* Pods-NasaAstronomyPicture-NasaAstronomyPictureUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NasaAstronomyPicture-NasaAstronomyPictureUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		C930CBCEC3A4F92C61D025AFDECEC78E /* Pods-NasaAstronomyPicture-NasaAstronomyPictureUITests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-NasaAstronomyPicture-NasaAstronomyPictureUITests"; path = Pods_NasaAstronomyPicture_NasaAstronomyPictureUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D673F658E25E500111BF5E852BA0E2CD /* Pods-NasaAstronomyPictureTests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-NasaAstronomyPictureTests"; path = Pods_NasaAstronomyPictureTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E063AE0D31072F0C8C7DD2EB9548D29B /* Pods-NasaAstronomyPictureTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NasaAstronomyPictureTests-dummy.m"; sourceTree = "<group>"; };
+		E0BCF4D82CD8CDBCEDD26CE7BB59987B /* YouTubePlayer-Swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "YouTubePlayer-Swift.modulemap"; sourceTree = "<group>"; };
+		E5FFDAC3DD5C274A9D1B97960131D431 /* YTPlayer.html */ = {isa = PBXFileReference; includeInIndex = 1; name = YTPlayer.html; path = YouTubePlayer/YouTubePlayer/YTPlayer.html; sourceTree = "<group>"; };
+		F3DAAAC604A2859008D4A5096FBB090A /* Pods-NasaAstronomyPictureTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NasaAstronomyPictureTests.release.xcconfig"; sourceTree = "<group>"; };
+		F5DC9272F2130AF40CBF7B2B1785DF4F /* YouTubePlayer-Swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YouTubePlayer-Swift-umbrella.h"; sourceTree = "<group>"; };
+		F6F5B58B9C70F896B2DBB335AD41FDD1 /* YouTubePlayer-Swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "YouTubePlayer-Swift-dummy.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		48CCA53E177DE2DF7B025C4D3DCECCBD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4B894956AAFB4A48D8FF27522F330E0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A927538D37DAFE2A7DEA7003B1CA17FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35F97E4C86B025D2049852AD3196C0B0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6322E65B88D1C2B58EAF286FF80EA69 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				644C82C90358AF4130014F5D0C81CD92 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF62E3F8C86E609B4D5F6CEE26B61B41 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC63350EB8D72955000BE62AF58F49CA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2977ED48C8351C18B218AE4FAEF55D70 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E0BCF4D82CD8CDBCEDD26CE7BB59987B /* YouTubePlayer-Swift.modulemap */,
+				F6F5B58B9C70F896B2DBB335AD41FDD1 /* YouTubePlayer-Swift-dummy.m */,
+				945CB36E75B48051B18808BC9DC9600C /* YouTubePlayer-Swift-Info.plist */,
+				961C5137170C7696DE47D02D9746FCEC /* YouTubePlayer-Swift-prefix.pch */,
+				F5DC9272F2130AF40CBF7B2B1785DF4F /* YouTubePlayer-Swift-umbrella.h */,
+				8C3A5345AC76AADE80CA19083E366E3D /* YouTubePlayer-Swift.debug.xcconfig */,
+				2DCDFC85007787811B261AC693809154 /* YouTubePlayer-Swift.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/YouTubePlayer-Swift";
+			sourceTree = "<group>";
+		};
+		437A715E790A1236BFB167DB6D0AB51F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E5FFDAC3DD5C274A9D1B97960131D431 /* YTPlayer.html */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		5B93FF41D40D25C8F2C6526654ADAC92 /* Pods-NasaAstronomyPicture-NasaAstronomyPictureUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4D03437CED91929294D03F47AF141F11 /* Pods-NasaAstronomyPicture-NasaAstronomyPictureUITests.modulemap */,
+				3648ECCB564B578DEE30A90A4112074D /* Pods-NasaAstronomyPicture-NasaAstronomyPictureUITests-acknowledgements.markdown */,
+				C6D5852468F09B5EAE2E7A8267DBC65F /* Pods-NasaAstronomyPicture-NasaAstronomyPictureUITests-acknowledgements.plist */,
+				2A06FCEAE5C87B2ADDFC6F88F86E3066 /* Pods-NasaAstronomyPicture-NasaAstronomyPictureUITests-dummy.m */,
+				9F37D0E667396E99FF6D68CF60BE9F28 /* Pods-NasaAstronomyPicture-NasaAstronomyPictureUITests-frameworks.sh */,
+				A7EAB76407AB65A59274221994570776 /* Pods-NasaAstronomyPicture-NasaAstronomyPictureUITests-Info.plist */,
+				6D9320892A04CC24519E92201E2E6D64 /* Pods-NasaAstronomyPicture-NasaAstronomyPictureUITests-umbrella.h */,
+				44AD31D3F7E57E7C5CC018E66659D330 /* Pods-NasaAstronomyPicture-NasaAstronomyPictureUITests.debug.xcconfig */,
+				4E8D269B6ACC2753398B5AEEF6A807C7 /* Pods-NasaAstronomyPicture-NasaAstronomyPictureUITests.release.xcconfig */,
+			);
+			name = "Pods-NasaAstronomyPicture-NasaAstronomyPictureUITests";
+			path = "Target Support Files/Pods-NasaAstronomyPicture-NasaAstronomyPictureUITests";
+			sourceTree = "<group>";
+		};
+		87DE04B7E7ECA25F8328D4C7740FF31D /* Pods-NasaAstronomyPictureTests */ = {
+			isa = PBXGroup;
+			children = (
+				BD302F5FB6237A3C5116A57654A1B261 /* Pods-NasaAstronomyPictureTests.modulemap */,
+				AAF81803C3D0AC0402BE1924E257DB44 /* Pods-NasaAstronomyPictureTests-acknowledgements.markdown */,
+				16F8D8C05F334A808763C6DBB8AC8CA1 /* Pods-NasaAstronomyPictureTests-acknowledgements.plist */,
+				E063AE0D31072F0C8C7DD2EB9548D29B /* Pods-NasaAstronomyPictureTests-dummy.m */,
+				21AA05C365B8645D8D7D79BC680CFE92 /* Pods-NasaAstronomyPictureTests-Info.plist */,
+				C3EEF64C09489355C5DE01917D7BCB43 /* Pods-NasaAstronomyPictureTests-umbrella.h */,
+				4CB5CDF8395E474EA66B1C9549740868 /* Pods-NasaAstronomyPictureTests.debug.xcconfig */,
+				F3DAAAC604A2859008D4A5096FBB090A /* Pods-NasaAstronomyPictureTests.release.xcconfig */,
+			);
+			name = "Pods-NasaAstronomyPictureTests";
+			path = "Target Support Files/Pods-NasaAstronomyPictureTests";
+			sourceTree = "<group>";
+		};
+		8879F17F22F5E7A0298634495AE28BAF /* Pods-NasaAstronomyPicture */ = {
+			isa = PBXGroup;
+			children = (
+				57D28C89E26DABC3A0DAD478F1EBF772 /* Pods-NasaAstronomyPicture.modulemap */,
+				390A3C961483D5CBED451751E3B957C0 /* Pods-NasaAstronomyPicture-acknowledgements.markdown */,
+				BB473A58808D974779210E6E4975E11E /* Pods-NasaAstronomyPicture-acknowledgements.plist */,
+				6298B4F197A998DAD5FB9CEF699483D5 /* Pods-NasaAstronomyPicture-dummy.m */,
+				7E54116B99D7D49F9602C32A643A728B /* Pods-NasaAstronomyPicture-frameworks.sh */,
+				3448CE436021407D2F3395BF6352E2C2 /* Pods-NasaAstronomyPicture-Info.plist */,
+				42C4F0622E74F64C276C435F2DF0D7F9 /* Pods-NasaAstronomyPicture-umbrella.h */,
+				508DA7F3B5EE1E91E18AB953E752313D /* Pods-NasaAstronomyPicture.debug.xcconfig */,
+				8870EBAE20B08A1E172963F5D2750CF8 /* Pods-NasaAstronomyPicture.release.xcconfig */,
+			);
+			name = "Pods-NasaAstronomyPicture";
+			path = "Target Support Files/Pods-NasaAstronomyPicture";
+			sourceTree = "<group>";
+		};
+		A21D60F7CF21E79FD424390E2AE86905 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				02AB3D61B4F373516A224C8422A60D12 /* Pods-NasaAstronomyPicture */,
+				C930CBCEC3A4F92C61D025AFDECEC78E /* Pods-NasaAstronomyPicture-NasaAstronomyPictureUITests */,
+				D673F658E25E500111BF5E852BA0E2CD /* Pods-NasaAstronomyPictureTests */,
+				2B92EFE564C6DAB0F6DF1CCB7A0903B1 /* YouTubePlayer-Swift */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B7733A1A85DBC89A0E17F9D97487C7CB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C6769905EFA11479872D98F2F195D986 /* YouTubePlayer-Swift */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B929B072EC0B3A4A7EFAE12EE42DDEE2 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8879F17F22F5E7A0298634495AE28BAF /* Pods-NasaAstronomyPicture */,
+				5B93FF41D40D25C8F2C6526654ADAC92 /* Pods-NasaAstronomyPicture-NasaAstronomyPictureUITests */,
+				87DE04B7E7ECA25F8328D4C7740FF31D /* Pods-NasaAstronomyPictureTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		C6769905EFA11479872D98F2F195D986 /* YouTubePlayer-Swift */ = {
+			isa = PBXGroup;
+			children = (
+				61CE01A14ECB7C11836DCD75E374EC14 /* VideoPlayerView.swift */,
+				437A715E790A1236BFB167DB6D0AB51F /* Resources */,
+				2977ED48C8351C18B218AE4FAEF55D70 /* Support Files */,
+			);
+			name = "YouTubePlayer-Swift";
+			path = "YouTubePlayer-Swift";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				B7733A1A85DBC89A0E17F9D97487C7CB /* Pods */,
+				A21D60F7CF21E79FD424390E2AE86905 /* Products */,
+				B929B072EC0B3A4A7EFAE12EE42DDEE2 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0DAAD886C824B8810D03B3E4DDBCE365 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5825F71CD70DE1FE804DA3B47A48232C /* YouTubePlayer-Swift-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3AD537E1017C58044739DC6AD1783FE3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCEF62AA70AF2618BBE537E09FD04654 /* Pods-NasaAstronomyPicture-NasaAstronomyPictureUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		991FBDC17262678CD947FFDF40FCE0C7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45B3BEC9B63C96F1387342C36CAFC419 /* Pods-NasaAstronomyPicture-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC79C1B3E162F61F571B0DED2184F04C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C43AB59C902AD3A57C56D9C773E98DB /* Pods-NasaAstronomyPictureTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		10348E5FDB34914E07BC12948E05498C /* Pods-NasaAstronomyPicture */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3398243BE643A690FBC4B139D2DA1B69 /* Build configuration list for PBXNativeTarget "Pods-NasaAstronomyPicture" */;
+			buildPhases = (
+				991FBDC17262678CD947FFDF40FCE0C7 /* Headers */,
+				AB824D7BBBDD384A2C994C5ED2020339 /* Sources */,
+				EF62E3F8C86E609B4D5F6CEE26B61B41 /* Frameworks */,
+				36987E327117F3984D7D1146B3523221 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2A1CF69CAB5AC350A3B4A9B6B70327FE /* PBXTargetDependency */,
+			);
+			name = "Pods-NasaAstronomyPicture";
+			productName = Pods_NasaAstronomyPicture;
+			productReference = 02AB3D61B4F373516A224C8422A60D12 /* Pods-NasaAstronomyPicture */;
+			productType = "com.apple.product-type.framework";
+		};
+		17F91230987223F6C1350A655DC43689 /* YouTubePlayer-Swift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 735F7C9D9E0155557C88E4C143BD25F5 /* Build configuration list for PBXNativeTarget "YouTubePlayer-Swift" */;
+			buildPhases = (
+				0DAAD886C824B8810D03B3E4DDBCE365 /* Headers */,
+				BC8D86A19BB0CFCC03EBE559068B48D2 /* Sources */,
+				C6322E65B88D1C2B58EAF286FF80EA69 /* Frameworks */,
+				CCD621C52D32D870C80B91A2FAFF1061 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "YouTubePlayer-Swift";
+			productName = YouTubePlayer_Swift;
+			productReference = 2B92EFE564C6DAB0F6DF1CCB7A0903B1 /* YouTubePlayer-Swift */;
+			productType = "com.apple.product-type.framework";
+		};
+		7686C5C1CEF25C1807EA839673CC7471 /* Pods-NasaAstronomyPictureTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0ED1C7F230725F8901C36480527D9C60 /* Build configuration list for PBXNativeTarget "Pods-NasaAstronomyPictureTests" */;
+			buildPhases = (
+				EC79C1B3E162F61F571B0DED2184F04C /* Headers */,
+				90763900866E8B9476C545EC8A6FDD0D /* Sources */,
+				A927538D37DAFE2A7DEA7003B1CA17FB /* Frameworks */,
+				56F0E73A497DFCF65163CEADD219D822 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				75154B642D809CD022E0F64B4A3970D4 /* PBXTargetDependency */,
+			);
+			name = "Pods-NasaAstronomyPictureTests";
+			productName = Pods_NasaAstronomyPictureTests;
+			productReference = D673F658E25E500111BF5E852BA0E2CD /* Pods-NasaAstronomyPictureTests */;
+			productType = "com.apple.product-type.framework";
+		};
+		893D1866EB3327B653F24030EAD0C48B /* Pods-NasaAstronomyPicture-NasaAstronomyPictureUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F66669222D7D9D075C540E95C0D8F22 /* Build configuration list for PBXNativeTarget "Pods-NasaAstronomyPicture-NasaAstronomyPictureUITests" */;
+			buildPhases = (
+				3AD537E1017C58044739DC6AD1783FE3 /* Headers */,
+				FFD7EAD6870174046643BEF9EC1D8BC8 /* Sources */,
+				48CCA53E177DE2DF7B025C4D3DCECCBD /* Frameworks */,
+				C240DE71EB78DDD53BE15E0B0D506F8D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B1EA62FEA0D37628C042F504D4EA41B1 /* PBXTargetDependency */,
+			);
+			name = "Pods-NasaAstronomyPicture-NasaAstronomyPictureUITests";
+			productName = Pods_NasaAstronomyPicture_NasaAstronomyPictureUITests;
+			productReference = C930CBCEC3A4F92C61D025AFDECEC78E /* Pods-NasaAstronomyPicture-NasaAstronomyPictureUITests */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = A21D60F7CF21E79FD424390E2AE86905 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				10348E5FDB34914E07BC12948E05498C /* Pods-NasaAstronomyPicture */,
+				893D1866EB3327B653F24030EAD0C48B /* Pods-NasaAstronomyPicture-NasaAstronomyPictureUITests */,
+				7686C5C1CEF25C1807EA839673CC7471 /* Pods-NasaAstronomyPictureTests */,
+				17F91230987223F6C1350A655DC43689 /* YouTubePlayer-Swift */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		36987E327117F3984D7D1146B3523221 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56F0E73A497DFCF65163CEADD219D822 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C240DE71EB78DDD53BE15E0B0D506F8D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCD621C52D32D870C80B91A2FAFF1061 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D3820CFC31943A43CAE8136152D40D0 /* YTPlayer.html in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		90763900866E8B9476C545EC8A6FDD0D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FB049AF5A0B5AC5BED7B4E1B726B709 /* Pods-NasaAstronomyPictureTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB824D7BBBDD384A2C994C5ED2020339 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7D149886D6337F2D8E3D4D3670363C8 /* Pods-NasaAstronomyPicture-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC8D86A19BB0CFCC03EBE559068B48D2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8200D89DA0E425A03BF10236DDF6D9AA /* VideoPlayerView.swift in Sources */,
+				6E1769D2B8B969728E22C7B8E15C27BA /* YouTubePlayer-Swift-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFD7EAD6870174046643BEF9EC1D8BC8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1B78CBE2368A774A86297968564D0FC /* Pods-NasaAstronomyPicture-NasaAstronomyPictureUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2A1CF69CAB5AC350A3B4A9B6B70327FE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "YouTubePlayer-Swift";
+			target = 17F91230987223F6C1350A655DC43689 /* YouTubePlayer-Swift */;
+			targetProxy = BA66986D75FB7DE58C4319DBCCE7F927 /* PBXContainerItemProxy */;
+		};
+		75154B642D809CD022E0F64B4A3970D4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-NasaAstronomyPicture";
+			target = 10348E5FDB34914E07BC12948E05498C /* Pods-NasaAstronomyPicture */;
+			targetProxy = BEC0FCCC039F09CB2EB5058F5AF1DC9C /* PBXContainerItemProxy */;
+		};
+		B1EA62FEA0D37628C042F504D4EA41B1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "YouTubePlayer-Swift";
+			target = 17F91230987223F6C1350A655DC43689 /* YouTubePlayer-Swift */;
+			targetProxy = ED454B4F0688DC46D67B5E4AE26CCC9D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		09909ECBA13E8F70A928465E7F7A9A92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		2DE0D8898245310716431F92FA4989FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		33A00CAC264FB0EE2DDA3E830AF2597F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E8D269B6ACC2753398B5AEEF6A807C7 /* Pods-NasaAstronomyPicture-NasaAstronomyPictureUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-NasaAstronomyPicture-NasaAstronomyPictureUITests/Pods-NasaAstronomyPicture-NasaAstronomyPictureUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-NasaAstronomyPicture-NasaAstronomyPictureUITests/Pods-NasaAstronomyPicture-NasaAstronomyPictureUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3EC2A8C3258E125D531302BAE04413F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8870EBAE20B08A1E172963F5D2750CF8 /* Pods-NasaAstronomyPicture.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-NasaAstronomyPicture/Pods-NasaAstronomyPicture-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-NasaAstronomyPicture/Pods-NasaAstronomyPicture.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4EC67E03C5BD5F4061D32A8EFF0043D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 508DA7F3B5EE1E91E18AB953E752313D /* Pods-NasaAstronomyPicture.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-NasaAstronomyPicture/Pods-NasaAstronomyPicture-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-NasaAstronomyPicture/Pods-NasaAstronomyPicture.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		62ED532CFC7238DB14ADE43FB8369EEF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4CB5CDF8395E474EA66B1C9549740868 /* Pods-NasaAstronomyPictureTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-NasaAstronomyPictureTests/Pods-NasaAstronomyPictureTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-NasaAstronomyPictureTests/Pods-NasaAstronomyPictureTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A9A3F2E2DC9E5335315035719C22EA76 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 44AD31D3F7E57E7C5CC018E66659D330 /* Pods-NasaAstronomyPicture-NasaAstronomyPictureUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-NasaAstronomyPicture-NasaAstronomyPictureUITests/Pods-NasaAstronomyPicture-NasaAstronomyPictureUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-NasaAstronomyPicture-NasaAstronomyPictureUITests/Pods-NasaAstronomyPicture-NasaAstronomyPictureUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C2F68BF6CB88A50D1BA1C686827187A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3DAAAC604A2859008D4A5096FBB090A /* Pods-NasaAstronomyPictureTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-NasaAstronomyPictureTests/Pods-NasaAstronomyPictureTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-NasaAstronomyPictureTests/Pods-NasaAstronomyPictureTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F35D9D312A1678B62CA9B4E1BB86269B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2DCDFC85007787811B261AC693809154 /* YouTubePlayer-Swift.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/YouTubePlayer-Swift/YouTubePlayer-Swift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/YouTubePlayer-Swift/YouTubePlayer-Swift-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/YouTubePlayer-Swift/YouTubePlayer-Swift.modulemap";
+				PRODUCT_MODULE_NAME = YouTubePlayer_Swift;
+				PRODUCT_NAME = YouTubePlayer_Swift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F74EED118A19CF557CB6EF8489CC3494 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C3A5345AC76AADE80CA19083E366E3D /* YouTubePlayer-Swift.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/YouTubePlayer-Swift/YouTubePlayer-Swift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/YouTubePlayer-Swift/YouTubePlayer-Swift-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/YouTubePlayer-Swift/YouTubePlayer-Swift.modulemap";
+				PRODUCT_MODULE_NAME = YouTubePlayer_Swift;
+				PRODUCT_NAME = YouTubePlayer_Swift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0ED1C7F230725F8901C36480527D9C60 /* Build configuration list for PBXNativeTarget "Pods-NasaAstronomyPictureTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				62ED532CFC7238DB14ADE43FB8369EEF /* Debug */,
+				C2F68BF6CB88A50D1BA1C686827187A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1F66669222D7D9D075C540E95C0D8F22 /* Build configuration list for PBXNativeTarget "Pods-NasaAstronomyPicture-NasaAstronomyPictureUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9A3F2E2DC9E5335315035719C22EA76 /* Debug */,
+				33A00CAC264FB0EE2DDA3E830AF2597F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3398243BE643A690FBC4B139D2DA1B69 /* Build configuration list for PBXNativeTarget "Pods-NasaAstronomyPicture" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4EC67E03C5BD5F4061D32A8EFF0043D9 /* Debug */,
+				3EC2A8C3258E125D531302BAE04413F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09909ECBA13E8F70A928465E7F7A9A92 /* Debug */,
+				2DE0D8898245310716431F92FA4989FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		735F7C9D9E0155557C88E4C143BD25F5 /* Build configuration list for PBXNativeTarget "YouTubePlayer-Swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F74EED118A19CF557CB6EF8489CC3494 /* Debug */,
+				F35D9D312A1678B62CA9B4E1BB86269B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

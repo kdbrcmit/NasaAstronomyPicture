@@ -1,0 +1,6 @@
+framework module Pods_NasaAstronomyPicture_NasaAstronomyPictureUITests {
+  umbrella header "Pods-NasaAstronomyPicture-NasaAstronomyPictureUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

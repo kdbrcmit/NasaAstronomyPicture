@@ -1,0 +1,25 @@
+/* 
+  Localizable.strings
+  NasaAstronomyPicture
+
+  Created by H453293 on 02/09/22.
+  
+*/
+
+"wrong_url" = "Please provide a valid url";
+"future_date_selected" = "Please select an older date";
+
+
+/// Api Errors
+"invalid_response" = "Invalid Response";
+"decoding_error" = "Error while decoding data";
+"unknown_error" = "Unknown error";
+"invalid_data" = "Invalid Data";
+"server_error" = "There is some error on server side.";
+"dark" = "Dark";
+"light" = "Light";
+"nasa_astrology" = "Image of the day";
+"error" = "Error";
+"ok" = "Ok";
+"favourite" = "Favourite";
+"back" = "Back";
