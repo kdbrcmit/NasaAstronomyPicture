@@ -25,3 +25,4 @@
 "back" = "Back";
 "wrong_video_url" = "Wrong video url";
 "wrong_image_url" = "Wrong image url";
+"wrong_api_key" = "Api key is wrong";

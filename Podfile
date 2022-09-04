@@ -6,6 +6,7 @@ target 'NasaAstronomyPicture' do
   use_frameworks!
 
   pod 'YouTubePlayer-Swift'
+  pod 'CryptoSwift'
 
   target 'NasaAstronomyPictureTests' do
     inherit! :search_paths

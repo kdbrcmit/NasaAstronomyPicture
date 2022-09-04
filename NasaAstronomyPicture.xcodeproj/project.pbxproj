@@ -42,6 +42,10 @@
 		9830941928C311D60092FB54 /* NAPCoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9830941828C311D60092FB54 /* NAPCoreDataManager.swift */; };
 		9830941C28C312220092FB54 /* NasaAstrology.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9830941A28C312220092FB54 /* NasaAstrology.xcdatamodeld */; };
 		98A616A728C459DE009AFF36 /* DownloadableImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98A616A628C459DE009AFF36 /* DownloadableImageView.swift */; };
+		98A616AD28C46994009AFF36 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98A616A928C46994009AFF36 /* Constants.swift */; };
+		98A616AE28C46994009AFF36 /* SecretKeysHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98A616AA28C46994009AFF36 /* SecretKeysHelper.swift */; };
+		98A616AF28C46994009AFF36 /* SecretKeys.plist in Resources */ = {isa = PBXBuildFile; fileRef = 98A616AB28C46994009AFF36 /* SecretKeys.plist */; };
+		98A616B028C46994009AFF36 /* encrypt.sh in Resources */ = {isa = PBXBuildFile; fileRef = 98A616AC28C46994009AFF36 /* encrypt.sh */; };
 		98FAA14828C330D000E7D99D /* FavouriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98FAA14728C330D000E7D99D /* FavouriteViewController.swift */; };
 		98FAA14B28C3310F00E7D99D /* FavouriteViewControllerVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98FAA14A28C3310F00E7D99D /* FavouriteViewControllerVM.swift */; };
 		98FAA14D28C331C200E7D99D /* UIStoryboard+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98FAA14C28C331C200E7D99D /* UIStoryboard+Extensions.swift */; };
@@ -115,6 +119,10 @@
 		9830941828C311D60092FB54 /* NAPCoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NAPCoreDataManager.swift; sourceTree = "<group>"; };
 		9830941B28C312220092FB54 /* NasaAstrology.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NasaAstrology.xcdatamodel; sourceTree = "<group>"; };
 		98A616A628C459DE009AFF36 /* DownloadableImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadableImageView.swift; sourceTree = "<group>"; };
+		98A616A928C46994009AFF36 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		98A616AA28C46994009AFF36 /* SecretKeysHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecretKeysHelper.swift; sourceTree = "<group>"; };
+		98A616AB28C46994009AFF36 /* SecretKeys.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SecretKeys.plist; sourceTree = "<group>"; };
+		98A616AC28C46994009AFF36 /* encrypt.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = encrypt.sh; sourceTree = "<group>"; };
 		98FAA14728C330D000E7D99D /* FavouriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteViewController.swift; sourceTree = "<group>"; };
 		98FAA14A28C3310F00E7D99D /* FavouriteViewControllerVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteViewControllerVM.swift; sourceTree = "<group>"; };
 		98FAA14C28C331C200E7D99D /* UIStoryboard+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+Extensions.swift"; sourceTree = "<group>"; };
@@ -190,6 +198,7 @@
 		983093A828C234860092FB54 /* NasaAstronomyPicture */ = {
 			isa = PBXGroup;
 			children = (
+				98A616A828C46994009AFF36 /* Encrypto */,
 				98FAA14928C330D700E7D99D /* ViewControllers */,
 				9830941728C311C70092FB54 /* CoreData */,
 				9830941228C2F2820092FB54 /* ThemeManager */,
@@ -332,6 +341,17 @@
 			path = CoreData;
 			sourceTree = "<group>";
 		};
+		98A616A828C46994009AFF36 /* Encrypto */ = {
+			isa = PBXGroup;
+			children = (
+				98A616A928C46994009AFF36 /* Constants.swift */,
+				98A616AA28C46994009AFF36 /* SecretKeysHelper.swift */,
+				98A616AB28C46994009AFF36 /* SecretKeys.plist */,
+				98A616AC28C46994009AFF36 /* encrypt.sh */,
+			);
+			path = Encrypto;
+			sourceTree = "<group>";
+		};
 		98FAA14928C330D700E7D99D /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -377,6 +397,7 @@
 				983093A328C234860092FB54 /* Frameworks */,
 				983093A428C234860092FB54 /* Resources */,
 				E4273EDC6AF8A524882577E6 /* [CP] Embed Pods Frameworks */,
+				98A616B128C46BC8009AFF36 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -479,6 +500,8 @@
 				983093E428C23A290092FB54 /* Localizable.strings in Resources */,
 				983093B328C2348B0092FB54 /* Assets.xcassets in Resources */,
 				983093B128C234870092FB54 /* Main.storyboard in Resources */,
+				98A616AF28C46994009AFF36 /* SecretKeys.plist in Resources */,
+				98A616B028C46994009AFF36 /* encrypt.sh in Resources */,
 				98FAA15828C33F6500E7D99D /* FavouriteTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -583,6 +606,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		98A616B128C46BC8009AFF36 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n$SRCROOT/NasaAstronomyPicture/Encrypto/encrypt.sh\n";
+		};
 		E4273EDC6AF8A524882577E6 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -614,6 +654,7 @@
 				983093F828C263CA0092FB54 /* Logger.swift in Sources */,
 				983093AE28C234860092FB54 /* ViewController.swift in Sources */,
 				983093F028C2413D0092FB54 /* HttpClient.swift in Sources */,
+				98A616AD28C46994009AFF36 /* Constants.swift in Sources */,
 				98FAA15428C3365D00E7D99D /* NAPTableViewCellIdentifiers.swift in Sources */,
 				98FAA14D28C331C200E7D99D /* UIStoryboard+Extensions.swift in Sources */,
 				98FAA14B28C3310F00E7D99D /* FavouriteViewControllerVM.swift in Sources */,
@@ -637,6 +678,7 @@
 				9830940128C26DB70092FB54 /* CalendarPickerHeaderView.swift in Sources */,
 				9830940D28C270880092FB54 /* BaseProtocol.swift in Sources */,
 				9830941628C2F7490092FB54 /* UIColor+Extensions.swift in Sources */,
+				98A616AE28C46994009AFF36 /* SecretKeysHelper.swift in Sources */,
 				983093FE28C26DB70092FB54 /* CalendarPickerFooterView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

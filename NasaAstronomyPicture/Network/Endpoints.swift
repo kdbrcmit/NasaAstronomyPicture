@@ -11,6 +11,7 @@ import Foundation
 internal protocol Endpoint {
     var base: String { get }
     var path: String { get }
+    var apiKey: String { get }
     var method: NAPApiMethod { get }
 }
 
@@ -29,9 +30,20 @@ internal enum NAPEndpoint {
 
 extension NAPEndpoint: Endpoint {
     var base: String {
-        switch NAPEnvironment.shared.environment {
-        case .development:
-            return NetworkConstants.Urls.developmentBaseUrl
+        if let baseUrl = SecretKeysHelper.shared.baseUrl {
+            return baseUrl
+        } else {
+            assertionFailure("wrong_url".localized)
+            return ""
+        }
+    }
+    
+    var apiKey: String {
+        if let baseUrl = SecretKeysHelper.shared.apiKey {
+            return baseUrl
+        } else {
+            assertionFailure("wrong_api_key".localized)
+            return ""
         }
     }
     
@@ -67,7 +79,7 @@ extension NAPEndpoint: Endpoint {
             return nil
         }
         component.queryItems = [URLQueryItem(name: NetworkConstants.ParamNames.api_key,
-                                             value: NetworkConstants.Keys.apiKey)]
+                                             value: apiKey)]
         
         for key in queryParams.keys {
             component.queryItems!.append(URLQueryItem(name: key,
