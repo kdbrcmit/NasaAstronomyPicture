@@ -12,7 +12,7 @@ extension UIBarButtonItem {
     func applyStyle() {
         let attributes = [NSAttributedString.Key.font :
                             UIFont.boldSystemFont(ofSize: 18),
-                           NSAttributedString.Key.foregroundColor:
+                          NSAttributedString.Key.foregroundColor:
                             NAPThemeManager.current.color_0080ff ]
         self.setTitleTextAttributes(attributes, for: .normal)
     }

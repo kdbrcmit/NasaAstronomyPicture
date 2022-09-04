@@ -231,7 +231,7 @@ private extension CalendarPickerViewController {
     var days: [Day] = (1..<(numberOfDaysInMonth + offsetInInitialRow))
       .map { day in
         // 4
-          var isWithinDisplayedMonth = day >= offsetInInitialRow
+          let isWithinDisplayedMonth = day >= offsetInInitialRow
         // 5
         let dayOffset =
           isWithinDisplayedMonth ?

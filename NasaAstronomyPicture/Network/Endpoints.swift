@@ -32,10 +32,6 @@ extension NAPEndpoint: Endpoint {
         switch NAPEnvironment.shared.environment {
         case .development:
             return NetworkConstants.Urls.developmentBaseUrl
-        default:
-            /// Adding assert to avoid the error
-            assertionFailure("wrong_url".localized)
-            return ""
         }
     }
     

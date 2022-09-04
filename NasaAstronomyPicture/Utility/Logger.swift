@@ -9,12 +9,12 @@ import Foundation
 import os.log
 
 enum LogEvent: String {
-   case e = "[‼️]" // error
-   case i = "[ℹ️]" // info
-   case d = "[⚙️]" // debug
-   case v = "[🔬]" // verbose
-   case w = "[⚠️]" // warning
-   case s = "[🔥]" // severe
+    case e = "[‼️]" // error
+    case i = "[ℹ️]" // info
+    case d = "[⚙️]" // debug
+    case v = "[🔬]" // verbose
+    case w = "[⚠️]" // warning
+    case s = "[🔥]" // severe
 }
 
 /// Logger class to configure the logging options
@@ -26,9 +26,9 @@ class Logger {
     ///   - function: function name with class where log was generated
     ///   - line: line number where the log was generated
     public class func d(_ items: String,
-                                file: String = #file,
-                                function: String = #function,
-                                line: Int = #line) {
+                        file: String = #file,
+                        function: String = #function,
+                        line: Int = #line) {
         /// We can use other conditions to block the loggings
         if NAPEnvironment.shared.environment == .development {
             let filename = URL.init(string: file)?.lastPathComponent
@@ -44,9 +44,9 @@ class Logger {
     ///   - function: function name with class where log was generated
     ///   - line: line number where the log was generated
     public class func e(_ items: String,
-                                file: String = #file,
-                                function: String = #function,
-                                line: Int = #line) {
+                        file: String = #file,
+                        function: String = #function,
+                        line: Int = #line) {
         /// We can use other conditions to block the loggings
         if NAPEnvironment.shared.environment == .development {
             let filename = URL.init(string: file)?.lastPathComponent

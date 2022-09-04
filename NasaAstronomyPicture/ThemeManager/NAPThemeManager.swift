@@ -39,7 +39,7 @@ public class NAPThemeManager {
 
 public protocol NAPThemeProtocol {
     var backgroundColor: UIColor { get }
-    var color_00bfff: UIColor { get }
+    var color_1a9cdf: UIColor { get }
     var color_0080ff: UIColor { get }
     var textColor: UIColor { get }
 }
@@ -47,7 +47,7 @@ public protocol NAPThemeProtocol {
 @available(iOS 11.0, *)
 public struct NAPLightTheme: NAPThemeProtocol {
     public var backgroundColor: UIColor = UIColor(hexaString: "f0f0f0")
-    public var color_00bfff: UIColor = UIColor(hexaString: "00bfff")
+    public var color_1a9cdf: UIColor = UIColor(hexaString: "1a9cdf").withAlphaComponent(0.4)
     public var color_0080ff = UIColor(hexaString: "0080ff")
     public var textColor = UIColor.black
     static let shared = NAPLightTheme()
@@ -56,7 +56,7 @@ public struct NAPLightTheme: NAPThemeProtocol {
 @available(iOS 11.0, *)
 public struct NAPDarkTheme: NAPThemeProtocol {
     public var backgroundColor: UIColor = UIColor(hexaString: "2f4857")
-    public var color_00bfff: UIColor = UIColor(hexaString: "1a9cdf")
+    public var color_1a9cdf: UIColor = UIColor(hexaString: "1a9cdf")
     public var color_0080ff = UIColor(hexaString: "0080ff")
     public var textColor = UIColor.white
     static let shared = NAPDarkTheme()

@@ -11,7 +11,7 @@ import YouTubePlayer_Swift
 class ViewController: UIViewController, BaseProtocol {
     var viewModel: ViewControllerVM!
     @IBOutlet weak var dateTextField: UITextField!
-    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var imageView: DownloadableImageView!
     @IBOutlet weak var headerUIView: UIView!
     @IBOutlet weak var headerUIBottomLabel: UILabel!
     @IBOutlet weak var changeDateButton: UIButton!
@@ -29,10 +29,6 @@ class ViewController: UIViewController, BaseProtocol {
         configure(ViewControllerVM())
         setupDefaultValues()
         setBarButtonItems()
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
         setupUI()
     }
     
@@ -40,7 +36,7 @@ class ViewController: UIViewController, BaseProtocol {
     func setupUI() {
         self.view.backgroundColor = NAPThemeManager.current.backgroundColor.withAlphaComponent(0.9)
         self.headerUIView.backgroundColor = NAPThemeManager.current.backgroundColor
-        self.headerUIBottomLabel.backgroundColor = NAPThemeManager.current.color_00bfff
+        self.headerUIBottomLabel.backgroundColor = NAPThemeManager.current.color_1a9cdf
         bookmarkButton.tintColor = .white
         bookmarkButton.backgroundColor = NAPThemeManager.current.color_0080ff
         bookmarkButton.layer.cornerRadius = 4
@@ -53,6 +49,8 @@ class ViewController: UIViewController, BaseProtocol {
         self.youtubePlayerView.layer.cornerRadius = 4
         self.youtubePlayerView.layer.borderWidth = 1
         activityIndicator.color = NAPThemeManager.current.textColor
+        dateTextField.backgroundColor = NAPThemeManager.current.color_1a9cdf
+        dateTextField.textColor = NAPThemeManager.current.textColor
     }
     
     /// TODO: Better to keep this code in separate Naviagtion Bar subclass
@@ -108,10 +106,10 @@ class ViewController: UIViewController, BaseProtocol {
         /// picker code is copied from Raywenderlich
         let pickerController = CalendarPickerViewController(
             baseDate: self.viewModel.selectedDate ?? Date(),
-          selectedDateChanged: { [weak self] date in
-              self?.dateChanged(date)
-          })
-
+            selectedDateChanged: { [weak self] date in
+                self?.dateChanged(date)
+            })
+        
         present(pickerController, animated: true, completion: nil)
     }
     
@@ -146,7 +144,6 @@ class ViewController: UIViewController, BaseProtocol {
     func handleBookmark() {
         self.bookmarkButton.isSelected = viewModel.isBookmarked()
         self.bookmarkButton.isHidden = false
-
     }
     
     /// Function to handle the Media
@@ -159,7 +156,7 @@ class ViewController: UIViewController, BaseProtocol {
         } else {
             self.imageViewHeightConstraints.isActive = true
             youtubePlayerView.playerVars = ["playsinline": "1" as AnyObject]
-            youtubePlayerView.loadVideoID("WMxjddqyVno")
+            youtubePlayerView.loadVideoURL(viewModel.response?.url)
             youtubePlayerView.delegate = self
             youtubePlayerView.isHidden = false
         }

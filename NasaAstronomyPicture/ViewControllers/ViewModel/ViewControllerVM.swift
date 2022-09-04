@@ -27,8 +27,8 @@ class ViewControllerVM {
             httpClient = HTTPClient(session: URLSession(configuration: .default))
             let params = [NetworkConstants.ParamNames.date: date]
             httpClient?.perform(from: endpoint,
-                               params: params,
-                               responseType: NAPFetchImageResponse.self) { result in
+                                params: params,
+                                responseType: NAPFetchImageResponse.self) { result in
                 switch result {
                 case .failure(let error):
                     if error.localizedDescription != "cancelled" {

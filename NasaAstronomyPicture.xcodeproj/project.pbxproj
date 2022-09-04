@@ -36,12 +36,12 @@
 		9830940828C26DE60092FB54 /* MonthMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9830940528C26DE60092FB54 /* MonthMetadata.swift */; };
 		9830940B28C270340092FB54 /* ViewControllerVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9830940A28C270340092FB54 /* ViewControllerVM.swift */; };
 		9830940D28C270880092FB54 /* BaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9830940C28C270880092FB54 /* BaseProtocol.swift */; };
-		9830940F28C284600092FB54 /* UIImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9830940E28C284600092FB54 /* UIImageView+Extensions.swift */; };
 		9830941128C28FC80092FB54 /* URL+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9830941028C28FC80092FB54 /* URL+Extensions.swift */; };
 		9830941428C2F29C0092FB54 /* NAPThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9830941328C2F29C0092FB54 /* NAPThemeManager.swift */; };
 		9830941628C2F7490092FB54 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9830941528C2F7490092FB54 /* UIColor+Extensions.swift */; };
 		9830941928C311D60092FB54 /* NAPCoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9830941828C311D60092FB54 /* NAPCoreDataManager.swift */; };
 		9830941C28C312220092FB54 /* NasaAstrology.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9830941A28C312220092FB54 /* NasaAstrology.xcdatamodeld */; };
+		98A616A728C459DE009AFF36 /* DownloadableImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98A616A628C459DE009AFF36 /* DownloadableImageView.swift */; };
 		98FAA14828C330D000E7D99D /* FavouriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98FAA14728C330D000E7D99D /* FavouriteViewController.swift */; };
 		98FAA14B28C3310F00E7D99D /* FavouriteViewControllerVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98FAA14A28C3310F00E7D99D /* FavouriteViewControllerVM.swift */; };
 		98FAA14D28C331C200E7D99D /* UIStoryboard+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98FAA14C28C331C200E7D99D /* UIStoryboard+Extensions.swift */; };
@@ -109,12 +109,12 @@
 		9830940528C26DE60092FB54 /* MonthMetadata.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonthMetadata.swift; sourceTree = "<group>"; };
 		9830940A28C270340092FB54 /* ViewControllerVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerVM.swift; sourceTree = "<group>"; };
 		9830940C28C270880092FB54 /* BaseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseProtocol.swift; sourceTree = "<group>"; };
-		9830940E28C284600092FB54 /* UIImageView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extensions.swift"; sourceTree = "<group>"; };
 		9830941028C28FC80092FB54 /* URL+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+Extensions.swift"; sourceTree = "<group>"; };
 		9830941328C2F29C0092FB54 /* NAPThemeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NAPThemeManager.swift; sourceTree = "<group>"; };
 		9830941528C2F7490092FB54 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
 		9830941828C311D60092FB54 /* NAPCoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NAPCoreDataManager.swift; sourceTree = "<group>"; };
 		9830941B28C312220092FB54 /* NasaAstrology.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NasaAstrology.xcdatamodel; sourceTree = "<group>"; };
+		98A616A628C459DE009AFF36 /* DownloadableImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadableImageView.swift; sourceTree = "<group>"; };
 		98FAA14728C330D000E7D99D /* FavouriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteViewController.swift; sourceTree = "<group>"; };
 		98FAA14A28C3310F00E7D99D /* FavouriteViewControllerVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteViewControllerVM.swift; sourceTree = "<group>"; };
 		98FAA14C28C331C200E7D99D /* UIStoryboard+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+Extensions.swift"; sourceTree = "<group>"; };
@@ -258,7 +258,6 @@
 			isa = PBXGroup;
 			children = (
 				983093EB28C23C820092FB54 /* String+Extensions.swift */,
-				9830940E28C284600092FB54 /* UIImageView+Extensions.swift */,
 				9830941028C28FC80092FB54 /* URL+Extensions.swift */,
 				9830941528C2F7490092FB54 /* UIColor+Extensions.swift */,
 				98FAA14C28C331C200E7D99D /* UIStoryboard+Extensions.swift */,
@@ -281,6 +280,7 @@
 				9830940C28C270880092FB54 /* BaseProtocol.swift */,
 				983093F728C263CA0092FB54 /* Logger.swift */,
 				98FAA15328C3365D00E7D99D /* NAPTableViewCellIdentifiers.swift */,
+				98A616A628C459DE009AFF36 /* DownloadableImageView.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -607,6 +607,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98A616A728C459DE009AFF36 /* DownloadableImageView.swift in Sources */,
 				983093EE28C23E8B0092FB54 /* NetworkConstants.swift in Sources */,
 				9830941128C28FC80092FB54 /* URL+Extensions.swift in Sources */,
 				9830940828C26DE60092FB54 /* MonthMetadata.swift in Sources */,
@@ -624,7 +625,6 @@
 				983093AC28C234860092FB54 /* SceneDelegate.swift in Sources */,
 				983093F228C242290092FB54 /* NAPAPIClient.swift in Sources */,
 				9830940B28C270340092FB54 /* ViewControllerVM.swift in Sources */,
-				9830940F28C284600092FB54 /* UIImageView+Extensions.swift in Sources */,
 				983093F528C2498E0092FB54 /* NAPFetchImageResponse.swift in Sources */,
 				983093EC28C23C820092FB54 /* String+Extensions.swift in Sources */,
 				9830940728C26DE60092FB54 /* Day.swift in Sources */,

@@ -85,7 +85,7 @@ extension NAPCoreDataManager {
         }
         saveContext()
     }
-        
+    
     /// Function to check if record already exists
     func fetchRecordIfExists(_ date: String) -> NAPFetchImageResponse? {
         let fetchRequest = NSFetchRequest<ImageOfTheDay>(entityName: "ImageOfTheDay")
@@ -94,14 +94,14 @@ extension NAPCoreDataManager {
         do {
             if let response = try self.context.fetch(fetchRequest).first {
                 return NAPFetchImageResponse(isBookmarked: response.isBookmarked,
-                                         id: nil,
-                                         date: response.date,
-                                         explanation: response.explanation,
-                                         hdurl: response.hdurl,
-                                         mediaType: NAPMediaType(rawValue: response.mediaType ?? "image"),
-                                         serviceVersion: nil,
-                                         title: response.title,
-                                         url: response.url)
+                                             id: nil,
+                                             date: response.date,
+                                             explanation: response.explanation,
+                                             hdurl: response.hdurl,
+                                             mediaType: NAPMediaType(rawValue: response.mediaType ?? "image"),
+                                             serviceVersion: nil,
+                                             title: response.title,
+                                             url: response.url)
             } else {
                 return nil
             }

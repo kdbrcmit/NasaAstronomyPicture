@@ -25,11 +25,6 @@ class FavouriteViewController: UIViewController, BaseProtocol {
         self.navigationItem.leftBarButtonItem?.applyStyle()
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        self.tableView.reloadData()
-    }
-    
     /// Function to setup the table view properties
     func prepareTableView() {
         NAPTableViewCellIdentifiers.favourite.registerTableViewCell(tableView: self.tableView)
@@ -55,8 +50,8 @@ extension FavouriteViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let tableViewCell = NAPTableViewCellIdentifiers.favourite.getDequeueReusableCell(tableView: tableView,
                                                                                             indexpath: indexPath) as? FavouriteTableViewCell  {
-        tableViewCell.configure(viewModel.records[indexPath.row])
-        return tableViewCell
+            tableViewCell.configure(viewModel.records[indexPath.row])
+            return tableViewCell
         } else {
             return UITableViewCell()
         }

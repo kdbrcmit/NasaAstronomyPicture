@@ -128,7 +128,7 @@ internal extension NAPAPIClient {
             Logger.e(NAPErrorMessages.invalidData.rawValue.localized
                      + ": \(String(describing: httpResponse))")
             completion(nil, .error(message: NAPErrorMessages.invalidData.rawValue.localized + ":" +
-                                    " \(String(describing: httpResponse))"))
+                                   " \(String(describing: httpResponse))"))
         }
     }
 }
